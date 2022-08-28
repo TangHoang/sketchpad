@@ -1,0 +1,18 @@
+* {
+    font: helvetica arial sans-serif;
+    margin: 0;
+    background-color: #efefef;
+}
+
+.grid-container{
+    display: grid;
+    background-color: #fefefe;
+    height: 500px;
+    width: 500px;
+}
+
+.grid-square{
+    height: auto;
+    width: auto;
+    background-color: #fefefe;
+}
