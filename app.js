@@ -20,7 +20,8 @@ const pixelSlider = document.getElementById("pixel-slider");
 const gridSquare = document.querySelectorAll(".grid-square");
 
 colorPicker.oninput = (e) => setColor(e.target.value);
-
+pixelSlider.onchange = (e) => setSize(e.target.value);
+pixelSlider.onmousemove = (e) =>setSize(e.target.value);
 colorButton.onclick = () => {
     setMode("color");
     colorButton.classList.toggle("highlight");
@@ -34,15 +35,12 @@ eraserButton.onclick = () => {
     clearButton.classList.remove("highlight");
     colorButton.classList.remove("highlight");
 }
-
-
 clearButton.onclick = () => {
     clearGrid();
     eraserButton.classList.remove("highlight");
     colorButton.classList.remove("highlight");
 }
 
-pixelSlider.onchange = (e) => setSize(e.target.value);
 
 function setColor(newColor){
     currentColor = newColor;
