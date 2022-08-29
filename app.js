@@ -55,6 +55,7 @@ function highlight(e){
     e.classList.toggle("highlight");
 }
 function setSize(newSize){
+    colorButton.classList.add("highlight");
     currentSize = newSize;
     updateSizeInfo(newSize);
     newGrid(newSize);
