@@ -27,7 +27,7 @@ body{
     text-align: center;
     padding-top: 10px;
     font-size: 13vh;
-    color: #0096FF;
+    color: #0096FE;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
 }
 
@@ -103,17 +103,17 @@ body{
 }
 
 #clear-button:active{
-    background-color: #0096FF;
+    background-color: #0096FE;
 }
 .button{
     height: 80%;
     border-radius: 20px;
-    border: 2px solid #0096FF;
+    border: 2px solid #0096FE;
     font-size: 1rem;
 }
 
 .highlight{
-    background-color: #0096FF;
+    background-color: #0096FE;
 }
 
 #pixel-value{
