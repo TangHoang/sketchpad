@@ -56,7 +56,8 @@ body{
     justify-content: center;
     align-items: center;
     grid-template-columns: 1;
-    grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr;
+    /*grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 1fr;*/
+    grid-template-rows: auto;
     gap: 20px;
 }
 
@@ -64,10 +65,11 @@ body{
     justify-self: center;
     grid-row: 1;
     grid-column: 1;
+    
 }
 
 #text{
-    height: 70%;
+    height: 50%;
     width: 100%;
     display: flex;
     align-items: center;
@@ -78,44 +80,53 @@ body{
 
     border-radius: 20px;
     margin-top: -50px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
 }
 
-#eraser-button{
+#color-button{
     grid-row: 3;
     grid-column: 1;
-    background-color: #00D7FF;
-    height: 80%;
+}
+
+#eraser-button{
+    grid-row: 4;
+    grid-column: 1;
     width: 100%;
 }
 
 #clear-button{
-    grid-row: 4;
+    grid-row: 5;
     grid-column: 1;
-    background-color: #00D7FF;
-    height: 80%;
     width: 100%;
+    transition: 0.1s ease-in-out;
 }
 
+#clear-button:active{
+    background-color: #0096FF;
+}
 .button{
+    height: 80%;
     border-radius: 20px;
-    border: none;
-    font-size: 1.2rem;
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
-    box-shadow: 0px 0px 1px 2px rgba(0,0,0,0.2);
+    border: 2px solid #0096FF;
+    font-size: 1rem;
+}
+
+.highlight{
+    background-color: #0096FF;
 }
 
 #pixel-value{
     text-align: center;
-    grid-row: 5;
+    grid-row: 6;
     grid-column: 1;
+    font-size: 0.9rem;
 }
 
 #pixel-slider{
-    grid-row: 6;
+    grid-row: 7;
     grid-column: 1;
-    margin-top: -80px;
+    margin-top: -40px;
     height: 90%;
 }
 
@@ -131,6 +142,7 @@ input[type="color"]::-webkit-color-swatch-wrapper {
 input[type="color"]::-webkit-color-swatch {
 	border: none;
     border-radius: 40px;
+    box-shadow: 0px 1px 5px rgba(0,0,0,0.3);
 }
 
 .grid-container{
@@ -150,7 +162,7 @@ input[type="color"]::-webkit-color-swatch {
     height: auto;
     width: auto;
     background-color: #fefefe;
-    border: 1px ridge rgba(40, 156, 156, 0.2);
+    border: none;
 }
 
 /* footer styling */
