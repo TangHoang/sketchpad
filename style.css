@@ -1,7 +1,7 @@
 * {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0;
-    background-color: #efefef;
+    background-color: #DBF7F3;
 }
 
 body{
@@ -52,6 +52,9 @@ body{
     height: 400px;
     width: 150px;
     
+    border: 1px solid #0096FE;
+    border-radius: 5px;
+
     display: grid;
     justify-content: center;
     align-items: center;
@@ -59,6 +62,11 @@ body{
     /*grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 1fr;*/
     grid-template-rows: auto;
     gap: 20px;
+}
+
+.settings-box{
+    background-color: azure;
+
 }
 
 #colorpicker{
@@ -99,7 +107,12 @@ body{
     grid-row: 5;
     grid-column: 1;
     width: 100%;
-    transition: 0.1s ease-in-out;
+    transition: 1s ease-out;
+}
+
+button:active{
+    transform: scale(1.02);
+
 }
 
 #clear-button:active{
