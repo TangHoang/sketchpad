@@ -1,7 +1,8 @@
 * {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0;
-    background-color: #DBF7F3;
+    background-color: #242a44
+    ;
 }
 
 body{
@@ -27,7 +28,7 @@ body{
     text-align: center;
     padding-top: 10px;
     font-size: 10vmin;
-    color: #0096FE;
+    color: #4c5af4;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
 }
 
@@ -40,6 +41,7 @@ body{
     width: 100vw;
     margin-top: 40px;
     margin-bottom: 20px;
+    color: #242a44;
 }
 
     /* settings styling */
@@ -55,7 +57,7 @@ body{
     height: 400px;
     width: 150px;
     
-    border: 1px solid #0096FE;
+    border: 1px solid #585cf2    ;
     border-radius: 5px;
 
     display: grid;
@@ -68,7 +70,7 @@ body{
 }
 
 .settings-box{
-    background-color: azure;
+    background-color: #fefefe;
 }
 
 #colorpicker{
@@ -82,7 +84,6 @@ body{
 #text{
     grid-row: 2;
     grid-column: 1;
-
     height: 100%;
     width: 90%;
     text-align: center;
@@ -90,22 +91,28 @@ body{
     justify-self: center;
     margin-top: -50px;
     font-size: 1rem;
+    color: #222222;
 }
 
 #color-button{
     grid-row: 3;
     grid-column: 1;
+    color: #222222;
 }
 
 #eraser-button{
     grid-row: 4;
     grid-column: 1;
+    color: #222222;
+
 }
 
 #clear-button{
     grid-row: 5;
     grid-column: 1;
     transition: 1s ease-out;
+    color: #222222;
+
 }
 
 button:active{
@@ -114,19 +121,22 @@ button:active{
 }
 
 #clear-button:active{
-    background-color: #0096FE;
+    background-color: #585cf2
+    ;
 }
 .button{
     height: 80%;
     border-radius: 20px;
-    border: 2px solid #0096FE;
+    border: 2px solid #585cf2
+    ;
     font-size: 1rem;
     width: 90%;
     justify-self: center;
 }
 
 .highlight{
-    background-color: #0096FE;
+    background-color: #585cf2
+    ;
 }
 
 #pixel-value{
@@ -167,12 +177,12 @@ input[type="color"]::-webkit-color-swatch {
     grid-row: 1;
     align-self: center;
     justify-self: center;
-
     display: grid;
     background-color: #fefefe;
     height: 500px;
     width: 500px;
     box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.1);
+    border-radius: 5px;
 }
 
 .grid-square{
@@ -187,11 +197,14 @@ input[type="color"]::-webkit-color-swatch {
 .footer{
     width: auto;
     font-size: 0.8rem;
+    color:#a1a7cc;
 }
 
 .instructions{
     margin-top: 6vmin;
     padding-left: 10px;
+    color:#a1a7cc;
+
 }
 
 ul{
